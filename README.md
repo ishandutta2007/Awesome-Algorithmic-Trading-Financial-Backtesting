@@ -1,49 +1,74 @@
-# Awesome-Algorithmic-Trading-Financial-Backtesting
+<div align="center">
 
-### Top Algorithmic Trading & Automated Crypto Execution Ecosystem
+<a href="https://github.com/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting">
+  <img src="assets/banner.svg" alt="Awesome Algorithmic Trading and Financial Backtesting Banner" width="100%" />
+</a>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Strategy Backtesting, Automated Execution & Self-Hosted Trading Engines*  
-**Last updated: March 2026**
+# Awesome Algorithmic Trading &amp; Financial Backtesting 🚀📈
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Algorithmic Trading & Automated Crypto Execution**. These tools help traders and developers automate strategy execution, backtest ideas against historical data, and manage live trading across crypto exchanges and traditional brokers—covering everything from visual no-code builders to institutional-grade execution engines.
+> **A curated directory of top-tier quantitative trading engines, systematic strategy backtesting frameworks, and automated crypto execution bots.**
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-bleeviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting?style=flat-square&color=red" alt="GitHub Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+<p align="center">
+  <b>Explore leading solutions for systematic trading, multi-asset portfolio simulation, HFT order-book modeling, and automated crypto bots.</b><br/>
+  <i>Updated for quants, systematic developers, algorithmic traders, and financial engineers.</i>
+</p>
+
+</div>
 
 ---
 
-## Sector Overview & Market Dynamics
-
-The global algorithmic trading market is valued between **$20B and $26B** (projected to exceed **$40B–$60B+ by 2030–2032** at an 8%–13% CAGR), driven by machine learning adoption, high-frequency execution, and cloud democratization. The industry exhibits **bifurcated dynamics**: high concentration at the institutional and execution layer (dominated by elite proprietary trading firms, prime brokers, and tier-1 market makers enjoying sub-millisecond co-location advantages), but heavy fragmentation across software tooling, retail platforms, multi-venue crypto liquidity, and open-source backtesting frameworks.
+## 📌 Table of Contents 📑
+- [⚡ Sector Overview &amp; Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [⭐ Star History](#-star-history)
+- [🤝 Support](#-support)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
 
 ---
 
-## SaaS / Hosted Platforms
+## ⚡ Sector Overview &amp; Market Dynamics 🌐
 
-| Platform | Starting Tier Pricing | Free Tier / Trial Limits | Company Size / Valuation / Revenue | Primary Asset Classes | Key Capabilities |
+The global algorithmic trading market is currently valued between **$20B and $26B** (projected to exceed **$40B–$60B+ by 2030–2032** at an 8%–13% CAGR), propelled by rapid advances in machine learning, high-frequency execution (HFT), and cloud-native infrastructure. 
+
+The industry displays a **bifurcated market structure**:
+* **Institutional Concentration:** Capital allocation and execution volumes are heavily concentrated among top-tier proprietary trading firms (e.g., Citadel Securities, Virtu Financial, Jane Street) and prime brokers who leverage proprietary sub-millisecond co-location pipelines.
+* **Software &amp; Tooling Fragmentation:** By contrast, the software layer is fiercely fragmented across specialized independent software vendors (ISVs), cloud analytics suites, multi-venue crypto bot automation, and a rich ecosystem of modular, open-source backtesting frameworks.
+
+---
+
+## 🏢 SaaS / Hosted Platforms ☁️
+
+A comparison of leading commercial trading platforms, broker APIs, and cloud-hosted algorithmic execution software.
+
+| Platform 🏷️ | Starting Tier Pricing 💳 | Free Tier / Trial Limits 🎁 | Company Size / Valuation / Revenue 📊 | Primary Asset Classes 💹 | Key Capabilities 🛠️ |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[TradingView](https://www.tradingview.com/)** | **$12.95/mo** (Essential, billed annually at $155.40/yr; or $14.95/mo monthly) | **Free forever Basic tier**: 1 chart per layout, max 2 indicators per chart, 1 active alert, ad-supported | **$3.0 Billion valuation** (Series C led by Tiger Global); estimated **$170M+ annual revenue run-rate** | Equities, Forex, Crypto, Futures, Indices | Industry-standard web charting, Pine Script strategy backtesting, alert-driven webhooks for automated execution |
 | **[NinjaTrader](https://ninjatrader.com/)** | **$99/mo** (Monthly lease) or **$1,499 one-time** (Lifetime license for lowest per-contract commissions) | **Free forever tier**: $0/mo software fee for simulated/paper trading and basic charting ($0.39 micro / $1.29 standard contract live commission fees) | **$1.5 Billion valuation** (Acquired by Kraken / Payward Inc. in 2025); estimated **$100M+ revenue** | Futures, Forex | Institutional desktop execution, C#-based automated strategies, high-performance backtesting and market replay |
-| **[Alpaca](https://alpaca.markets/)** | **$99/mo** (Algo Trader Plus data plan; live US stock/ETF trading is $0 commission base) | **Free forever plan**: $0 brokerage account fee, unlimited paper trading API, free market data capped at 200 requests/min & 30 concurrent websocket symbols (15-min delayed) | **$1.1 Billion valuation** (Series D, backed by Drive Capital & Kraken); estimated **$100M–$200M revenue** | US Equities, ETFs, Crypto | Developer-first brokerage API, paper & live execution, fractional trading, official LLM/MCP agent server |
+| **[Alpaca](https://alpaca.markets/)** | **$99/mo** (Algo Trader Plus data plan; live US stock/ETF trading is $0 commission base) | **Free forever plan**: $0 brokerage account fee, unlimited paper trading API, free market data capped at 200 requests/min &amp; 30 concurrent websocket symbols (15-min delayed) | **$1.1 Billion valuation** (Series D, backed by Drive Capital &amp; Kraken); estimated **$100M–$200M revenue** | US Equities, ETFs, Crypto | Developer-first brokerage API, paper &amp; live execution, fractional trading, official LLM/MCP agent server |
 | **[MetaTrader (MT4/MT5)](https://www.metatrader5.com/)** | **Free for retail traders** via supporting brokers; broker white-label server licensing starts at **~$3,000–$5,000/mo** + setup fees | **Free forever client terminal**: unlimited demo/paper trading accounts across hundreds of broker test servers | **Estimated $100M–$250M+ annual revenue**; bootstrapped with an estimated private enterprise value exceeding **$1.0B+** | Forex, CFDs, Futures, Equities | Global benchmark forex platform, MQL4/MQL5 automated Expert Advisors (EAs), extensive community strategy marketplace |
 | **[QuantConnect](https://www.quantconnect.com/)** | **$10/seat/mo** (Quant Researcher seat; live execution nodes start at an additional **$10/mo** for Micro nodes) | **Free forever tier**: Unlimited backtesting queue on 1 shared cloud node, standard historical datasets, 32 KB web IDE file limit; 0 live trading nodes (no live broker execution) | Privately held fintech; venture-backed (pre-money round ~$20M+); estimated **$5M–$12M annual revenue** | Equities, Options, Futures, Forex, Crypto | Cloud backtesting and live engine powered by open-source LEAN, multi-asset portfolio optimization, alternative data |
-| **[3Commas](https://3commas.io/)** | **$15/mo** (Starter plan, billed annually at $180/yr; or $25/mo monthly) | **Free forever tier**: 1 active DCA bot, 1 Grid bot, 1 SmartTrade, unlimited manual demo paper trading. (Also includes 14-day Pro trial on signup without credit card) | **$40 Million total funding** (Series B led by Jump Capital and Target Global); estimated **$10M–$15M annual revenue** | Crypto (Spot & Futures) | Cloud-hosted DCA, Grid bots, signal-triggered trades via TradingView alerts, multi-exchange management across 16+ CEXs |
-| **[Bitsgap](https://bitsgap.com/)** | **$23/mo** (Basic plan, billed annually; or $29/mo monthly) | **7-day free trial** of full PRO tier (up to 50 Grid bots & 250 DCA bots, no credit card required); after 7 days automatically downgrades to free demo mode with $100k virtual funds | Estonia-incorporated private fintech; bootstrapped; estimated **€5M–€10M annual revenue** | Crypto (Spot & Futures) | Leveraged futures grid bots, automated DCA + Grid COMBO strategies, portfolio tracking across Binance, OKX, Bybit |
+| **[3Commas](https://3commas.io/)** | **$15/mo** (Starter plan, billed annually at $180/yr; or $25/mo monthly) | **Free forever tier**: 1 active DCA bot, 1 Grid bot, 1 SmartTrade, unlimited manual demo paper trading. (Also includes 14-day Pro trial on signup without credit card) | **$40 Million total funding** (Series B led by Jump Capital and Target Global); estimated **$10M–$15M annual revenue** | Crypto (Spot &amp; Futures) | Cloud-hosted DCA, Grid bots, signal-triggered trades via TradingView alerts, multi-exchange management across 16+ CEXs |
+| **[Bitsgap](https://bitsgap.com/)** | **$23/mo** (Basic plan, billed annually; or $29/mo monthly) | **7-day free trial** of full PRO tier (up to 50 Grid bots &amp; 250 DCA bots, no credit card required); after 7 days automatically downgrades to free demo mode with $100k virtual funds | Estonia-incorporated private fintech; bootstrapped; estimated **€5M–€10M annual revenue** | Crypto (Spot &amp; Futures) | Leveraged futures grid bots, automated DCA + Grid COMBO strategies, portfolio tracking across Binance, OKX, Bybit |
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects 🔓
 
-Curated open-source trading engines, backtesting libraries, and quantitative execution frameworks. Sorted by GitHub stars (descending):
+Curated open-source trading engines, backtesting libraries, and quantitative execution frameworks. Sorted in descending order by GitHub stars:
 
-| Open-Source Project | Stars Badge | Language & Architecture | Description & Core Strengths |
+| Open-Source Project 🚀 | Stars Badge ⭐ | Language &amp; Architecture 🏗️ | Description &amp; Core Strengths 💡 |
 | :--- | :--- | :--- | :--- |
 | **[Freqtrade](https://github.com/freqtrade/freqtrade)** | [![GitHub stars](https://img.shields.io/github/stars/freqtrade/freqtrade?style=social&color=white)](https://github.com/freqtrade/freqtrade/stargazers) | Python (Event-driven / Async) | The leading open-source crypto algorithmic trading software. Features extensive technical indicator integration, Telegram bot management, hyperopt parameter tuning, machine learning strategy modules (FreqAI), and live/dry-run trading across major exchanges. |
 | **[ccxt](https://github.com/ccxt/ccxt)** | [![GitHub stars](https://img.shields.io/github/stars/ccxt/ccxt?style=social&color=white)](https://github.com/ccxt/ccxt/stargazers) | JavaScript / Python / PHP / C# | Foundational multi-exchange cryptocurrency trading library providing unified REST and WebSocket APIs for 100+ exchanges. Powers order execution, ticker streaming, order book parsing, and balance management in almost all crypto bots. |
@@ -63,7 +88,26 @@ Curated open-source trading engines, backtesting libraries, and quantitative exe
 
 ---
 
-## How to Contribute
+## ⭐ Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Algorithmic-Trading-Financial-Backtesting&type=date&legend=top-left)
+
+---
+
+## 🤝 Support &amp; Sponsorship 💖
+
+Thank you for visiting and using this curated directory! If you found this repository helpful for your quantitative research, trading strategy development, or financial engineering journey, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** your favorite algorithms, frameworks, and insights.
+- 📢 **Share** with quantitative traders, Python devs, and algorithmic communities.
+- ☕ **Buy me a coffee**: Support ongoing curation and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## 🛠️ How to Contribute 🤝
 
 1. Fork the repository.
 2. Add or update entries in [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Algorithmic-Trading-Financial-Backtesting/README.md) adhering strictly to tabular formatting:
@@ -73,7 +117,7 @@ Curated open-source trading engines, backtesting libraries, and quantitative exe
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer 📜
 
 - This is a **community-curated** list for educational and informational purposes only—not investment or financial advice.
 - Algorithmic trading and leveraged crypto execution carry **substantial risk of financial loss**. Simulated or backtested performance does not guarantee future results.

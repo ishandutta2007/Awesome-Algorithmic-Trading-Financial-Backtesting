@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#070b14" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="50%" stop-color="#4FACFE" />
+      <stop offset="100%" stop-color="#00E676" />
+    </linearGradient>
+
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E676" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#00E676" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#7B2CBF" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .grid-line { stroke: #1e293b; stroke-width: 1; stroke-dasharray: 4,4; opacity: 0.6; }
+      .candlestick-green { fill: #00E676; stroke: #00E676; }
+      .candlestick-red { fill: #FF5252; stroke: #FF5252; }
+      .pulse-circle { animation: pulse 3s infinite ease-in-out; }
+      .wave-line {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: drawLine 4s cubic-bezier(0.4, 0, 0.2, 1) forwards, floatLine 6s ease-in-out infinite alternate 4s;
+      }
+      .signal-dot {
+        animation: blink 2s infinite alternate;
+      }
+      .badge-pill {
+        rx: 14;
+        ry: 14;
+        fill: #132238;
+        stroke: #334e68;
+        stroke-width: 1.2;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(0.98); opacity: 0.4; }
+        50% { transform: scale(1.02); opacity: 0.8; }
+        100% { transform: scale(0.98); opacity: 0.4; }
+      }
+      @keyframes drawLine {
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes blink {
+        0% { opacity: 0.3; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1.2); }
+      }
+      @keyframes floatLine {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glowing Orbs (Dynamic depth) -->
+  <circle cx="150" cy="100" r="140" fill="url(#glowGrad)" class="pulse-circle" />
+  <circle cx="1050" cy="320" r="160" fill="url(#glowGrad)" class="pulse-circle" />
+
+  <!-- Technical Background Grid -->
+  <line x1="100" y1="40" x2="100" y2="380" class="grid-line" />
+  <line x1="300" y1="40" x2="300" y2="380" class="grid-line" />
+  <line x1="500" y1="40" x2="500" y2="380" class="grid-line" />
+  <line x1="700" y1="40" x2="700" y2="380" class="grid-line" />
+  <line x1="900" y1="40" x2="900" y2="380" class="grid-line" />
+  <line x1="1100" y1="40" x2="1100" y2="380" class="grid-line" />
+
+  <line x1="40" y1="100" x2="1160" y2="100" class="grid-line" />
+  <line x1="40" y1="200" x2="1160" y2="200" class="grid-line" />
+  <line x1="40" y1="300" x2="1160" y2="300" class="grid-line" />
+
+  <!-- Animated Financial Line & Candlestick Background Elements -->
+  <!-- Subtle Candlesticks behind right side -->
+  <g opacity="0.35">
+    <!-- Green Candle 1 -->
+    <line x1="880" y1="240" x2="880" y2="340" stroke="#00E676" stroke-width="2" />
+    <rect x="873" y="260" width="14" height="60" class="candlestick-green" rx="2" />
+
+    <!-- Red Candle 2 -->
+    <line x1="930" y1="220" x2="930" y2="320" stroke="#FF5252" stroke-width="2" />
+    <rect x="923" y="240" width="14" height="50" class="candlestick-red" rx="2" />
+
+    <!-- Green Candle 3 -->
+    <line x1="980" y1="180" x2="980" y2="290" stroke="#00E676" stroke-width="2" />
+    <rect x="973" y="200" width="14" height="70" class="candlestick-green" rx="2" />
+
+    <!-- Green Candle 4 -->
+    <line x1="1030" y1="140" x2="1030" y2="260" stroke="#00E676" stroke-width="2" />
+    <rect x="1023" y="160" width="14" height="80" class="candlestick-green" rx="2" />
+  </g>
+
+  <!-- Dynamic Area Wave Chart (Bottom Decorative) -->
+  <path d="M 60 380 Q 250 330 450 350 T 800 270 T 1140 210 L 1140 380 Z" fill="url(#chartGrad)" />
+  <path d="M 60 380 Q 250 330 450 350 T 800 270 T 1140 210" fill="none" stroke="#00E676" stroke-width="3.5" class="wave-line" filter="url(#neonGlow)" />
+
+  <!-- Animated Execution Signal Dots on the Chart -->
+  <circle cx="800" cy="270" r="5" fill="#00F2FE" class="signal-dot" filter="url(#neonGlow)" />
+  <circle cx="970" cy="240" r="5" fill="#00E676" class="signal-dot" filter="url(#neonGlow)" />
+  <circle cx="1140" cy="210" r="6" fill="#00E676" class="signal-dot" filter="url(#neonGlow)" />
+
+  <!-- Primary Foreground Content Container (Guaranteed Crisp Foreground) -->
+  <g id="foreground-content" transform="translate(60, 50)">
+    
+    <!-- Category Mini-Tag -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="280" height="28" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" opacity="0.95" />
+      <text x="14" y="18" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">⚡ SYSTEMATIC QUANT ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="90" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+      Algorithmic Trading &amp;
+    </text>
+    <text x="0" y="145" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" filter="url(#softGlow)">
+      Financial Backtesting 📈
+    </text>
+
+    <!-- Subtitle / Mission Statement -->
+    <text x="0" y="195" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400">
+      Curated open-source trading engines, backtest frameworks, execution bots &amp; quant platforms.
+    </text>
+
+    <!-- Feature Attribute Pills (Foreground) -->
+    <g transform="translate(0, 230)">
+      <!-- Pill 1: Backtesting -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="165" height="32" class="badge-pill" />
+        <text x="20" y="21" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">📊 Event-Driven</text>
+      </g>
+
+      <!-- Pill 2: Crypto Bots -->
+      <g transform="translate(180, 0)">
+        <rect x="0" y="0" width="160" height="32" class="badge-pill" />
+        <text x="20" y="21" fill="#00E676" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🤖 Automated Bots</text>
+      </g>
+
+      <!-- Pill 3: Machine Learning -->
+      <g transform="translate(355, 0)">
+        <rect x="0" y="0" width="170" height="32" class="badge-pill" />
+        <text x="20" y="21" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🧠 AI / ML Strategies</text>
+      </g>
+
+      <!-- Pill 4: Multi-Asset -->
+      <g transform="translate(540, 0)">
+        <rect x="0" y="0" width="175" height="32" class="badge-pill" />
+        <text x="20" y="21" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🌐 Multi-Exchange</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Decorative Corner Accents -->
+  <path d="M 12 40 L 12 12 L 40 12" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.8" />
+  <path d="M 1188 40 L 1188 12 L 1160 12" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.8" />
+  <path d="M 12 380 L 12 408 L 40 408" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.8" />
+  <path d="M 1188 380 L 1188 408 L 1160 408" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.8" />
+</svg>
